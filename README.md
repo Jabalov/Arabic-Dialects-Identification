@@ -1,5 +1,5 @@
 # Arabic-Dialects-Identification
-- This repo is dedicated to build a classification pipeline to the problem of Arabic dialects, labels contain 18 clasess/dialects, using a classic ML and modern DL approaches. 
+- This repo is dedicated to build a classification pipeline to the problem of Arabic dialects identification, labels contain 18 clasess/dialects, using a classic ML and modern DL approaches. 
 
 ## Description
 - The Dataset and the dialect identification problem were addressed by Qatar Computing Research Institute. More on: https://arxiv.org/pdf/2005.06557.pdf

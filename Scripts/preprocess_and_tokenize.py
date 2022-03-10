@@ -126,12 +126,3 @@ class TweetsTokenizing:
         self.remove_repeated_characters()
         
         return self.tokens
-
-
-df = pd.read_csv("../input/dialecttweets/full_df.csv", engine="python")
-df["text"] = df["Text"].apply(lambda text : PreprocessTweets(text).preprocessing_pipeline())
-df.drop("Text", inplace=True, axis=1)
-df.to_csv("cleaned_df.csv", encoding='utf-8-sig')
-
-df["text"] = df["text"].apply(lambda text : TweetsTokenizing(text).tokenize_pipeline())
-df.to_csv("tokenized_df.csv", encoding='utf-8-sig')

@@ -7,13 +7,9 @@ import json
 url = "https://recruitment.aimtechnologies.co/ai-tasks"
 ids_df = pd.read_csv("../input/dialect-ids/dialect_dataset.csv")
 
-ids = list(ids_df.id.values.astype(np.str))
-len(ids) 
-
 txt_df = pd.DataFrame()
 j = 0
     
-df = pd.DataFrame()
 for i in range(1000, len(ids) + 1000, 1000):
     
     if i > len(ids) + 1 : 

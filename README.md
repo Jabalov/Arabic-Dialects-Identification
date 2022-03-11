@@ -38,8 +38,7 @@
 ## Install
 You have to download **Python 3** and the following Python libraries:
 
-- [Torch](https://pytorch.org/)
-- [PyTorch-Lightening](https://www.pytorchlightning.ai/)
+- [Tensorflow](https://www.tensorflow.org/)
 - [Transformers](https://huggingface.co/docs/transformers/index)
 - [MARBERT](https://huggingface.co/UBC-NLP/MARBERT)
 - [imblearn](https://imbalanced-learn.org/stable/)

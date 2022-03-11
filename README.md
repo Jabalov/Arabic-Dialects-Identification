@@ -24,7 +24,7 @@
   The pipeline will be used later in local deployment.
   Trained using kaggle (CPU)
   
-#### DL Modeling (Notebooks/Modeling-Dialect-Data-DL.ipynb)
+#### DL Modeling (Notebooks/MARBERT-FineTuning.ipynb.ipynb)
   Using MARBERT (A Deep Bidirectional Transformer for Arabic) MARBERT is a large-scale pre-trained masked language model focused on both Dialectal Arabic (DA) and MSA.
   I prefered to fine-tune an arabic tranformer as it should excel in this task better than any BI-LSTM/LSTM model.
   MARBERT tokenizer and fine-tuned transformer will be used later in deployment.

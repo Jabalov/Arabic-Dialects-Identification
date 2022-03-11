@@ -26,9 +26,9 @@
   
 #### DL Modeling (Notebooks/Modeling-Dialect-Data-DL.ipynb)
   Using MARBERT (A Deep Bidirectional Transformer for Arabic) MARBERT is a large-scale pre-trained masked language model focused on both Dialectal Arabic (DA) and MSA.
-  I prefered to fine-tune an arabic tranformer as it should excel in this task better than and BI-LSTM/LSTM model.
+  I prefered to fine-tune an arabic tranformer as it should excel in this task better than any BI-LSTM/LSTM model.
   MARBERT tokenizer and fine-tuned transformer will be used later in deployment.
-  Trained using Google Colab GPU (NVIDIA V100).
+  Trained using Kaggle GPU (NVIDIA V100).
 
 #### Model Deployment (Scripts/api.py)
   This is a small script, based on Flask micro-framework, that takes an input from the used and displayes an output using a static page.

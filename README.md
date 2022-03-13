@@ -5,6 +5,8 @@
 - The Dataset and the dialect identification problem were addressed by Qatar Computing Research Institute. More on: https://arxiv.org/pdf/2005.06557.pdf
 - I Implemented a data-scraper, data-preprocessor (using Regex), data-modeling (SVM with TF-IDF and MarBert using HuggingFace) and deployment-script using FlaskAPIs locally.
 
+---
+
 ## Files/Source
 #### Fetching (Notebooks/Fetch-Dialects-Data.ipynb or Scripts/data_fetching.py)
   Data fetching is done by sending 1000 (max-json-length) ids per post-request using a start & end index, parsing its content and appending it in the data-frame. There's a small   trick in the request loop, if the end index exceeded the length of the ids, it will take the remainder.
@@ -34,8 +36,10 @@
 #### Model Deployment (Scripts/app.py)
   This is a small script, based on Flask micro-framework, that takes an input from the used and displayes an output using a static page.
   Every back-end processing is done in the previous stages.
+  
+---
 
-#### Evaluation Metrics and Results:
+## Evaluation Metrics and Results:
   Imbalance-learn module uses **Macro Average** internally.
   Macro averaging is perhaps the most straightforward amongst the numerous averaging methods.
   The macro-averaged F1 score (or macro F1 score) is computed by taking the arithmetic mean (aka unweighted mean) of all the per-class F1 scores.

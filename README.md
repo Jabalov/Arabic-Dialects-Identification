@@ -34,6 +34,15 @@
   This is a small script, based on Flask micro-framework, that takes an input from the used and displayes an output using a static page.
   Every back-end processing is done in the previous stages.
 
+#### Evaluation Metrics and Results:
+  Imbalance-learn module uses Macro Average internally.
+  Macro averaging is perhaps the most straightforward amongst the numerous averaging methods.
+  The macro-averaged F1 score (or macro F1 score) is computed by taking the arithmetic mean (aka unweighted mean) of all the per-class F1 scores.
+  This method treats all classes equally regardless of their support values.
+  working with an imbalanced dataset where all classes are equally important, using the macro average would be a good choice as it treats all classes equally.
+  ![image](https://user-images.githubusercontent.com/36515196/158068910-f54e4753-9b46-4a0c-99ec-7974128deb73.png)
+  ![image](https://user-images.githubusercontent.com/36515196/158068918-d08e985a-b4c8-4cf9-94fe-c9618770d780.png)
+
 
 ## Install
 You have to download **Python 3** and the following Python libraries:

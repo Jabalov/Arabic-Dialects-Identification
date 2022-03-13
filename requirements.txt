@@ -1,0 +1,88 @@
+# TensorFlow is much easier to install using Anaconda, especially
+# on Windows or when using a GPU. Please see the installation
+# instructions in INSTALL.md
+
+
+##### Core scientific packages
+jupyterlab~=3.2.0
+matplotlib~=3.5.0
+numpy~=1.22.0
+pandas~=1.4.0
+scipy~=1.8.0
+
+##### Machine Learning packages
+scikit-learn~=1.0.2
+
+# Optional: the XGBoost library is only used in chapter 7
+xgboost~=1.5.0
+
+# Optional: the transformers library is only using in chapter 16
+transformers~=4.16.2
+
+##### TensorFlow-related packages
+
+# If you have a TF-compatible GPU and you want to enable GPU support, then
+# replace tensorflow-serving-api with tensorflow-serving-api-gpu.
+# Your GPU must have CUDA Compute Capability 3.5 or higher support, and
+# you must install CUDA, cuDNN and more: see tensorflow.org for the detailed
+# installation instructions.
+
+tensorflow~=2.8.0
+# Optional: the TF Serving API library is just needed for chapter 18.
+tensorflow-serving-api~=2.8.0  # or tensorflow-serving-api-gpu if gpu
+
+tensorboard~=2.8.0
+tensorboard-plugin-profile~=2.5.0
+tensorflow-datasets~=4.5.2
+tensorflow-hub~=0.12.0
+
+# Optional: used in chapters 11 & 16 (for AdamW & seq2seq)
+tensorflow-addons~=0.16.1
+
+##### Reinforcement Learning library (chapter 18)
+
+# There are a few dependencies you need to install first, check out:
+# https://github.com/openai/gym#installing-everything
+gym[Box2D,atari,accept-rom-license]~=0.21.0
+
+# WARNING: on Windows, installing Box2D this way requires:
+# * Swig: http://www.swig.org/download.html
+# * Microsoft C++ Build Tools:
+#   https://visualstudio.microsoft.com/visual-cpp-build-tools/
+# It's much easier to use Anaconda instead.
+
+##### Image manipulation
+Pillow~=9.0.0
+graphviz~=0.19.1
+pyglet~=1.5.21
+
+#pyvirtualdisplay  # needed in chapter 18, if on a headless server
+                  # (i.e., without screen, e.g., Colab or VM)
+
+
+##### Additional utilities
+
+# Efficient jobs (caching, parallelism, persistence)
+joblib~=1.1.0
+
+# Easy http requests
+requests~=2.27.0
+
+# Nice utility to diff Jupyter Notebooks.
+nbdime~=3.1.0
+
+# May be useful with Pandas for complex "where" clauses (e.g., Pandas
+# tutorial).
+numexpr~=2.8.0
+
+# Optional: these libraries can be useful in chapter 3, exercise 4.
+nltk~=3.6.5
+urlextract~=1.5.0
+
+# Optional: these libraries are only used in chapter 16
+ftfy~=5.5.0
+
+# Optional: tqdm displays nice progress bars, ipywidgets for tqdm's notebook
+#           support
+tqdm~=4.62.3
+ipywidgets~=7.6.5

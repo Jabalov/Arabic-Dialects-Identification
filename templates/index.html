@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arabic Dialects Identification</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      display: flex;
+      justify-content: center;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 15px;
+      }
+      form {
+      border: 5px solid #f1f1f1;
+      }
+      input[type=text], input[type=password] {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      }
+      button {
+      background-color: #8ebf42;
+      color: white;
+      padding: 14px 0;
+      margin: 10px 0;
+      border: none;
+      cursor: grabbing;
+      width: 100%;
+      }
+      h1 {
+      text-align:center;
+      fone-size:18;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      display: inline-block;
+      text-align: center;
+      margin: 24px 50px 12px;
+      
+      }
+      .container {
+      display: inline-block;
+      margin: 24px 50px 12px;
+      text-align:center;
+
+      }
+      span.psw {
+      float: right;
+      padding-top: 0;
+      padding-right: 15px;
+      }
+    ::-webkit-input-placeholder {
+       text-align: center;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+       text-align: center;  
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       text-align: center;  
+    }
+
+    :-ms-input-placeholder {  
+       text-align: center; 
+    }
+      /* Change styles for span on extra small screens */
+      @media screen and (max-width: 300px) {
+      span.psw {
+      display: block;
+      float: none;
+      }
+    }
+    .row {
+      width: 100vw;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .cols {
+      height: 400px;
+      width: 400px;
+      margin: 5px 5px 5px 5px;
+      background-color: blue;
+    }
+    </style>
+  </head>
+  <body>
+      <div>
+        <form action="{{ url_for('prediction')}}" method="post">
+          <h2> <center> Arabic Dialects Identification </center> </h2>
+          <div class="formcontainer">
+              <div class="container">
+                <label for="uname"><strong>Text Input</strong></label>
+                <input type="text" placeholder="Enter your text here" name="uname" required>
+              </div>
+              <button type="submit">Predict</button>
+          </div>
+         </form>
+          <div class="container">
+              <div class="container content">
+                {% if prediction_ml %}
+                <center> <h3 for="uname"><strong>{{ prediction_ml }}</strong></h3></center>
+                {% endif %}
+
+                {% if prediction_dl %}
+                <center> <h3 for="uname"><strong>{{ prediction_dl }}</strong></h3></center>
+                {% endif %}          
+              </div>
+          </div>
+      </div>
+  </body>
+</html> 

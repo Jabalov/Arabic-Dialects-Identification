@@ -41,7 +41,7 @@ You have to download **Python 3** and the following Python libraries:
 - [Tensorflow](https://www.tensorflow.org/)
 - [Transformers](https://huggingface.co/docs/transformers/index)
 - [MARBERT](https://huggingface.co/UBC-NLP/MARBERT)
-- [NKT](https://www.nltk.org/)
+- [NLTK](https://www.nltk.org/)
 - [imblearn](https://imbalanced-learn.org/stable/)
 - [NumPy](http://www.numpy.org/)
 - [Pandas](http://pandas.pydata.org)

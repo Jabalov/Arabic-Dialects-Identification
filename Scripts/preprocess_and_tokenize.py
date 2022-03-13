@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 from sklearn import preprocessing
 
-nltk.download('all')
 import nltk 
+# nltk.download('all')
 from nltk.corpus import stopwords, wordnet 
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import RegexpTokenizer

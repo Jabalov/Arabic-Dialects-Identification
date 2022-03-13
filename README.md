@@ -51,5 +51,5 @@ All are provided in **env.yml**
 - [Flask](https://flask.palletsprojects.com/)
 
 ## API
-![photo_2022-03-13_03-33-40](https://user-images.githubusercontent.com/36515196/158041279-1fdf54cc-9fc8-4cf2-8033-d6d559de3d6a.jpg)
+![Screenshot_13](https://user-images.githubusercontent.com/36515196/158060575-32fda8d5-6272-4cd6-87ff-461b99335ca3.png)
 

@@ -37,6 +37,7 @@
 
 ## Install
 You have to download **Python 3** and the following Python libraries:
+All are provided in **env.yml**
 
 - [Tensorflow](https://www.tensorflow.org/)
 - [Transformers](https://huggingface.co/docs/transformers/index)
@@ -48,3 +49,7 @@ You have to download **Python 3** and the following Python libraries:
 - [scikit-learn](http://scikit-learn.org/stable/)
 - [JobLib](https://joblib.readthedocs.io/en/latest/)
 - [Flask](https://flask.palletsprojects.com/)
+
+## API
+![photo_2022-03-13_03-33-40](https://user-images.githubusercontent.com/36515196/158041279-1fdf54cc-9fc8-4cf2-8033-d6d559de3d6a.jpg)
+

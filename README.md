@@ -34,7 +34,7 @@
   Trained using Kaggle GPU (NVIDIA V100).
 
 #### Model Deployment (Scripts/app.py)
-  This is a small script, based on Flask micro-framework, that takes an input from the used and displayes an output using a static page.
+  This is a small script, based on Flask micro-framework, that takes an input from user and displayes an output using a static page.
   Every back-end processing is done in the previous stages.
   
 ---

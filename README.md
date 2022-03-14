@@ -22,7 +22,7 @@
 - There were an imbalance in the dialects, so I used SMOTE (Synthetic Minority Oversampling Technique) to balance the classes. The amount of data is big but if I used             Undersampling there will be loss, more text data will help ML-Models to learn better.
 - I used TF-IDF vectorizer as it's one of the best statistical vector spaces used in NLP Classic solutions. 
 - The Model trained is LinearSVM as it's one of the best linear models in text classification problems.
-- SVM understands relationships between features better than naïve-bayes. Also working with well prepared vector spaces makes SVM work well in text classification problems.
+- SVM understands relationships between features better than naïve-bayes. Also working with well prepared vector spaces makes SVM work well as in text classification problems.
 - Trained using Kaggle (CPU).
   
 #### DL Modeling (Notebooks/MARBERT-FineTuning.ipynb)

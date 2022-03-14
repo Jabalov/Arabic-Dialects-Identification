@@ -25,7 +25,7 @@
   SVM understands relationships between features better than naïve-bayes. Also working with well prepared vector spaces makes SVM work well in text classification problems.
   Trained using Kaggle (CPU).
   
-#### DL Modeling (Notebooks/MARBERT-FineTuning.ipynb.ipynb)
+#### DL Modeling (Notebooks/MARBERT-FineTuning.ipynb)
   I Used MARBERT (A Deep Bidirectional Transformer for Arabic).
   MARBERT is a large-scale pre-trained masked language model focused on both Dialectal Arabic (DA) and MSA.
   Fine-tunning a pre-trained dialectical Arabic transformer will excel in this task better than any BI-LSTM/LSTM model, as it has a tremendous word-embeddings trained on 1B       Arabic tweets from a large in-house dataset of about 6B tweets.

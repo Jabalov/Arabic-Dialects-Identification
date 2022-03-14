@@ -12,7 +12,7 @@
   Data fetching is done by sending 1000 (max-json-length) ids per post-request using a start & end index, parsing its content and appending it in the data-frame. There's a small   trick in the request loop, if the end index exceeded the length of the ids, it will take the remainder.
   The output of this process is a data-frame that has the retrieved text and labels.
   
-#### Preprocessing (Notebooks/Fetch-Dialects-Data.ipynb or Scripts/preprocess_and_tokenize.py)
+#### Preprocessing (Notebooks/Preprocessing-Dialect-Data.ipynb or Scripts/preprocess_and_tokenize.py)
   I have implemented two classes, one for preprocessing and the other is for tokenization. 
   Preprocessing has a pipeline that applies letters normalization, removing tashkeel, substitute characters, removing symbols, punctuation, spaces, quotation marks and English     letters. All of this is done by regex python module.
   Tokenization has a pipeline that applies a normal tokenizing for text, removing stop words and removing repeated words. There’s also a small EDA in the notebook.

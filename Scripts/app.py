@@ -50,7 +50,7 @@ def prediction():
     tokenized_for_bert = tokenizer.encode(preprocessed_text, truncation=True, padding=True, return_tensors="tf")
     
     # Do prediction using two models
-    ml_predict = f"SVM Prediction: {svm_pipeline.predict(tokenized_for_ml)[0]}"
+    ml_predict = f"SVM Prediction: {svm_pipeline.predict([f'{tokenized_for_ml}'])[0]}"
     bert_predict = f"MARBERT Prediction: {np.argmax(marebert_model.predict(tokenized_for_bert)[0], axis=1)[0]}"
     
     # Rendering with predictions
